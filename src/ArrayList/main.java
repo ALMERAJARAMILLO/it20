@@ -20,6 +20,21 @@ public class main {
         item1 = a.nextLine();
         item2 = a.nextLine();
         item3 = a.nextLine();
+        
+        //inputs that will be added to the arraylist
+        list.addItems(item1, item2, item3);
+        System.out.println(" ------------------------------");
+        
+        //Updating one value
+        System.out.print("Enter an index number that you want to change: ");
+        index = a.nextInt();
+        a.nextLine();
+        System.out.println("Enter a new item that you want to replace with the other index");
+        newitem = a.nextLine();
+        list.updateItem(index, newitem);
+        list.displayItems();
+        System.out.println("------------------------------------");
+        
 
     }
 }

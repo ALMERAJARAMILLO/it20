@@ -23,7 +23,15 @@ public class ItemManager {
         items.add(item3);
         System.out.println("You added: " + items);
     }
-    
+    // Method to update the one item in the item list
+    public void updateItem(int index, String newitem) {
+        if(index >= 0 && index < items.size()){
+            String olditem = items.set(index, newitem);
+            System.out.println("You updated: " + olditem + "to" + newitem);
+        }else{
+            System.out.println("Index out of bounds");
+        }
+    }
 }
 
 
