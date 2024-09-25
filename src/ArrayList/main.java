@@ -11,5 +11,8 @@ public class main {
         //Initializing variables
         String item1, item2, item3, newitem, finditem;
         int index;
+        
+        //to display items first
+        list.displayItems();
     }
 }
