@@ -35,6 +35,14 @@ public class main {
         list.displayItems();
         System.out.println("------------------------------------");
         
+         //Finding user's input and displaying it
+        System.out.println("Enter an item name that you want to find: ");
+        finditem = a. nextLine();
+        list.finditem(finditem);
+        list.displayItems();
+        System.out.print("-------------------------------------");
+        
+        
 
     }
 }
