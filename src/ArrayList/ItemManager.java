@@ -21,8 +21,9 @@ public class ItemManager {
         items.add(item1);
         items.add(item2);
         items.add(item3);
-
+        System.out.println("You added: " + items);
     }
+    
 }
 
 
