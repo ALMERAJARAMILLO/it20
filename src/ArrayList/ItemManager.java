@@ -10,10 +10,19 @@ public class ItemManager {
     public ItemManager() {
         items = new ArrayList<>();
     }
-    
+
     //method to display items
     public void displayItems() {
         System.out.println("Items in the list: " + items);
     }
 
+    // Methods to add user's input to Arraylist   
+    public void addItems(String item1, String item2, String item3) {
+        items.add(item1);
+        items.add(item2);
+        items.add(item3);
+
+    }
 }
+
+

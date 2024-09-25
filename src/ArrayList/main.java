@@ -14,5 +14,12 @@ public class main {
         
         //to display items first
         list.displayItems();
+        
+         // user input
+        System.out.println("Enter 3 items you want to add: ");
+        item1 = a.nextLine();
+        item2 = a.nextLine();
+        item3 = a.nextLine();
+
     }
 }
