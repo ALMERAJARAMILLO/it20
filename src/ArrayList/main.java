@@ -43,6 +43,13 @@ public class main {
         System.out.print("-------------------------------------");
         
         
+         //Deleting an item from the list
+        System.out.println("Enter an index to delete: ");
+        int newIndex = a.nextInt();
+        list.deleteItem(newIndex);
+        list.displayItems();
+        a.close();
+        
 
     }
 }

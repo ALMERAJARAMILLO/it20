@@ -43,6 +43,16 @@ public class ItemManager {
         }
         return index;
     }
+     
+     // Method to delete one item in the list
+     public void deleteItem(int index) {
+        if (index >= 0 && index < items.size()) {
+            String removeditem = items.remove(index);
+            System.out.println("You have successfully deleted the item: " + removeditem);
+        } else {
+            System.out.println("Index out of bounds");
+        }
+    }
 }
 
 
