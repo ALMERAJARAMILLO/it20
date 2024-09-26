@@ -30,6 +30,20 @@ public class main {
             }
         }
     }
+      public static void move() {
+        System.out.println("Enter index you want to switch: ");
+        int element1 = in.nextInt();
+        System.out.println("Enter another index you want to switch: ");
+        int element2 = in.nextInt();
+
+        list.moveNodePointer(element1, element2);
+        list.printlist();
+    }
+
+    public static void display() {
+        list.printlist();
+    }
+    
      public static void delete() {
         System.out.println("Enter element you want to delete");
         list.printlist();
@@ -48,7 +62,9 @@ public class main {
             System.out.println("--------------------------------");
             System.out.println("1. Add Element");
             System.out.println("2. Move or switch Element");
-            System.out.println("3. Exit");
+            System.out.println("3. Display");
+            System.out.println("4. Delete");
+            System.out.println("5. Exit");
             System.out.println("--------------------------------");
             System.out.println();
 
@@ -60,9 +76,15 @@ public class main {
                         adding();
                         break;
                     case 2:
-                        delete();
+                        move();
                         break;
                     case 3:
+                        display();
+                        break;
+                    case 4:
+                        delete();
+                        break;
+                    case 5:
                         exit = true;
                         System.out.println("Thank You for Visiting");
                         break;
