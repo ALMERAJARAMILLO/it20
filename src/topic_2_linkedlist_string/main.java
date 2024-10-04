@@ -31,9 +31,9 @@ public class main {
         }
     }
       public static void move() {
-        System.out.println("Enter index you want to switch: ");
+        System.out.println("Enter index you want to swap: ");
         int element1 = in.nextInt();
-        System.out.println("Enter another index you want to switch: ");
+        System.out.println("Enter another index you want to swap: ");
         int element2 = in.nextInt();
 
         list.moveNodePointer(element1, element2);
