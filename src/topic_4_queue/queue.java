@@ -1,14 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package topic_4_queue;
 
-/**
- *
- * @author HOME
- */
+import java.util.LinkedList;
+
 public class queue {
-    
+
+    private LinkedList<customer> customers;
+
+    public queue() {
+        customers = new LinkedList<>();
+    }
+
+    public boolean isEmpty() {
+        return customers.isEmpty();
+    }
+
+    public int size() {
+        return customers.size();
+    }
+
+    public void enqueue(customer customer) {
+        customers.addLast(customer);
+        System.out.println(customer.getName() + " has been added to the queue.");
+    }
 }
