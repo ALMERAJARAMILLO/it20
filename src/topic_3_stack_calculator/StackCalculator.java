@@ -101,5 +101,21 @@ public class StackCalculator extends JFrame implements ActionListener {
             default:
                 return; // Unknown operation
         }
+
+        stack.push(result);
+        display.append(String.format("Performed %s: %d %s %d = %d\n", command, a, command, b, result));
+        displayStack();
     }
+
+    private void displayStack() {
+        display.setText("Current Stack: " + stack + "\n");
     }
+
+    public static void main(String[] args) {
+
+        SwingUtilities.invokeLater(() -> {
+            StackCalculator calculator = new StackCalculator();
+            calculator.setVisible(true);
+        });
+    }
+}
